@@ -9,7 +9,7 @@ Term Project Proposal · Open Source Software (Fall 2026)
 
 | | |
 |---|---|
-| **Author** | David (Student ID: ____________ ) |
+| **Author** | David (Student ID: 25102748 ) |
 | **Type** | Individual project |
 | **Date** | October 28, 2026 |
 | **Deadline** | December 6, 2026 (planned submission: December 5) |
