@@ -115,40 +115,7 @@ All three ways of creating a design (the web UI, a `.ring` file, or two referenc
 
 ---
 
-## 6. Prototype (Already Working)
-
-To check that the idea is feasible, I built a prototype engine in about 150 lines of NumPy before writing this proposal.
-
-![Prototype rings](images/rings.png)
-
-**Accuracy of the engine** (plain band, US 7, 4 mm × 1.5 mm; exact volume = π((r + t)² − r²) · w = **354.74 mm³**):
-
-| Segments | Triangles | Engine volume | Error | Watertight |
-|---|---|---|---|---|
-| 16 | 128 | 345.69 mm³ | 2.55% | ✓ |
-| 64 | 512 | 354.17 mm³ | 0.16% | ✓ |
-| 256 | 2,048 | 354.71 mm³ | 0.010% | ✓ |
-| 720 | 5,760 | 354.74 mm³ | 0.0013% | ✓ |
-
-**Decorated rings:**
-
-| Design | Triangles | Volume | Weight (925 silver) | Build time |
-|---|---|---|---|---|
-| 24 grooves | 230,400 | 334.6 mm³ | 3.47 g | 0.2 s |
-| Hammered | 129,600 | 321.3 mm³ | 3.33 g | 0.3 s |
-| Voronoi | 230,400 | 324.8 mm³ | 3.37 g | 0.3 s |
-| Engraved text (6 mm band) | 518,400 | 520.4 mm³ | 5.39 g | 0.4 s |
-
-- Every mesh passed my own watertight check (every edge shared by exactly two triangles), and every volume matched the independent library **trimesh**.
-- The grooved ring was also built with a completely different CAD engine (build123d): 335.6 mm³ vs. my 334.6 mm³, a difference of 0.3%.
-
-**Merge prototype** (two parents, union, morph, and two bred children):
-
-![Merge prototype](images/merge.png)
-
----
-
-## 7. Tech Stack & Environment
+## 6. Tech Stack & Environment
 
 | | |
 |---|---|
@@ -161,7 +128,7 @@ To check that the idea is feasible, I built a prototype engine in about 150 line
 
 ---
 
-## 8. My Work vs. External Code
+## 7. My Work vs. External Code
 
 | Written by me | External (cited in README) |
 |---|---|
@@ -178,7 +145,7 @@ To check that the idea is feasible, I built a prototype engine in about 150 line
 
 ---
 
-## 9. Schedule
+## 8. Schedule
 
 | Week | Dates | Goals |
 |---|---|---|
@@ -190,7 +157,7 @@ To check that the idea is feasible, I built a prototype engine in about 150 line
 
 ---
 
-## 10. Success Criteria
+## 9. Success Criteria
 
 | Goal | Target | Prototype so far |
 |---|---|---|
@@ -203,7 +170,7 @@ To check that the idea is feasible, I built a prototype engine in about 150 line
 
 ---
 
-## 11. Risks & Mitigation
+## 10. Risks & Mitigation
 
 | Risk | Mitigation |
 |---|---|
@@ -216,7 +183,7 @@ To check that the idea is feasible, I built a prototype engine in about 150 line
 
 ---
 
-## 12. Deliverables
+## 11. Deliverables
 
 - Public GitHub repository and source code (zip) at submission time
 - `README.md` with project description, GIF demos, screenshots, installation guide, benchmarks, accuracy results and references
@@ -225,7 +192,7 @@ To check that the idea is feasible, I built a prototype engine in about 150 line
 
 ---
 
-## 13. References
+## 12. References
 
 - Möller, T., & Trumbore, B. (1997). Fast, minimum storage ray-triangle intersection. *Journal of Graphics Tools*, 2(1).
 - Garland, M., & Heckbert, P. S. (1997). Surface simplification using quadric error metrics. *SIGGRAPH '97*.
